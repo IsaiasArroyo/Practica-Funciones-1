@@ -37,10 +37,7 @@ void vfnMemCpy (uint8_t *bpSource, uint8_t *bpDest, uint16_t wSize);
  */
 int main(void)
 {
-	uint8_t Source[5] = {4, 8, 12, 16, 20};
-	uint8_t Destino[5];
-	uint16_t wSize = 0x5;
-	vfnMemCpy (Source, Destino, wSize);
+
 
 
     while (1)
