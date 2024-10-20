@@ -34,7 +34,7 @@ uint8_t bfnToLowerCase (uint8_t bChar){
 uint8_t bfnIsPrint (uint8_t bChar){
 
 	if(bChar >= ' ' && bChar <= '~'){ //Verifica que bChar se encuentre entre caracteres imprimibles 
-		bChar = 0x1; //Modifica el valor de bChar por un 1
+		return 0x1; //Devuelve un 1
 	}
 	return bChar;
 }
@@ -45,7 +45,7 @@ uint8_t bfnIsPrint (uint8_t bChar){
 uint8_t bfnIsHex (uint8_t bChar){
 
 	if ((bChar >= '0' && bChar <= '9') || (bChar >= 'A' && bChar <= 'F')){ //Verifica que bChar se encuentre entre 0 y 9  entre A y Z
-		bChar = 0x1; //Modifica el valor de bChar por un 1
+		return 0x1; //Devuelve un 1
 	}
 	return bChar;
 }
